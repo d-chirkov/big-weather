@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"jsx": "react",
+		"removeComments": true,
+		"alwaysStrict": true,
+		"esModuleInterop": true,
+		"module": "commonjs"
+	},
+	"exclude": [
+		"node_modules"
+	]
+}

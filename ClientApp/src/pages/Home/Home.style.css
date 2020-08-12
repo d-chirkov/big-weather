@@ -1,0 +1,155 @@
+.container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, #FFFFFF 0%, #D6FFFD 0.01%, #FDFFA6 100%);
+	display: flex;
+	flex-direction: row;
+	font-family: "Segoe UI";
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex-basis: 50%;
+}
+
+.temperature-ctr {
+	display: flex;
+  flex-basis: 70%;
+	flex-direction: row-reverse;
+  height: 70%;
+	position: relative;
+}
+
+.temperature {
+  position: absolute;
+	bottom: 0;
+	right: 30px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35vw;
+	line-height: 35vw;
+	/* identical to box height */
+	color: transparent;
+	-webkit-text-stroke: 5px black;
+}
+
+.celsius {
+  position: absolute;
+  top: 4vw;
+  right: -5vw;
+	background: url(icons/Celsius.svg);
+	background-repeat: round;
+	transform: translateY(-50%);
+
+  max-width: 74px;
+	max-height: 74px;
+	width: 6vw;
+	height: 6vw;
+}
+
+.hidden {
+	display: none;
+}
+
+.advise {
+	display: flex;
+	flex-direction: row;
+  margin-left: 100px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.advise-icon {
+	background: url(icons/exclamation-circle-solid.svg);
+	background-repeat: round;
+	width: 84px;
+	height: 84px;
+}
+
+.advise-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 3vw;
+	line-height: 75px;
+  margin-left: 20px;
+	white-space: nowrap;
+
+}
+
+.right {
+	display: flex;
+	flex-basis: 50%;
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+}
+
+.description {
+	margin-right: auto;
+	margin-left: auto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2vw;
+	line-height: 35px;
+	margin-top: 30px;
+}
+
+.city {
+	background: url(icons/city.svg);
+	background-repeat: round;
+	margin-right: auto;
+	margin-left: auto;
+  transform: translateX(10px);
+	width: 267px;
+	height: 232px;
+  margin-top: 50px;
+}
+
+.city-name {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 4vw;
+	line-height: 94px;
+	transform: translateX(16px);
+  text-align: center;
+	width: calc(100% - 20px);
+	border: 0;
+	background: transparent;
+	outline: none;
+}
+
+.weather-icon {
+	width: 300px;
+	height: 300px;
+  margin-right: auto;
+	margin-left: auto;
+	margin-top: 87px;
+}
+
+.clouds {
+	background: url(icons/cloud-solid.svg);
+	background-repeat: round;
+}
+
+.clear {
+	background: url(icons/sun-solid.svg);
+	background-repeat: round;
+}
+
+.snow {
+	background: url(icons/snowflake-solid.svg);
+	background-repeat: round;
+}
+
+.rain {
+	background: url(icons/cloud-showers-heavy-solid.svg);
+	background-repeat: round;
+}
+
+.message {
+  margin: auto;
+	font-size: 30px;
+}
